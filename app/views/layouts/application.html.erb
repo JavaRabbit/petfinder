@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Petfinder</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application'%>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container">
+  <h1><%= link_to "Pet Finders", root_path %></h1>
+  <h1><%= link_to "Sign Up", new_user_path %></h1>
+  <div class="navbar navbar-default">
+    <div class="navbar-inner">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li class="active"><%= link_to "Home", root_path %></li>
+          <li><a href="#">Featured Pet of the Week</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Pet Care</a></li>
+          <li><a href="#">About</a></li>
+          <li><%= link_to "Contact Us", contact_path %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-9"><%= yield %></div>
+    <div class="col-md-3">
+
+      <h2>About Us</h2>
+      <h2>Dogs</h2>
+      <h2>Cats</h2>
+      <h2>Critters</h2>
+      <h2><%= link_to "News Blog", blog_path %></h2>
+      <h2><%= link_to "Contact Us", contact_path %></h2>
+      Thanks for visiting and helping us support homeless animals.
+      &copy 2015
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
