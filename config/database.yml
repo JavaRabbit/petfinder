@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: petfinder_production
-  username: petfinder
+  username: ubuntu
   password: <%= ENV['PETFINDER_DATABASE_PASSWORD'] %>

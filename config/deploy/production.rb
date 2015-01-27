@@ -17,7 +17,7 @@
 
 server '54.186.105.174',
 user: 'ubuntu',
-roles: %w{web app},
+roles: %w{web app db},
 ssh_options: {
   keys: %w(/Users/bonniekwong/.ssh/ec2-ada.pem),
   forward_agent: false,
