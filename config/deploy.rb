@@ -2,7 +2,7 @@
 lock '3.3.5'
 
 set :application, 'petfinder'
-set :repo_url, 'git@github:JavaRabbit/petfinder.git'
+set :repo_url, 'git@github.com:JavaRabbit/petfinder.git' 
 set :use_sudo, false
 
 set :deploy_to, '/var/www/petfinder'
